@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Pesan Untukmu </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="envelope" id="envelope" onclick="openEnvelope()">
+            <div class="heart-seal">💙</div>
+        </div>
+        
+        <div class="content hidden" id="message-content">
+            <img id="gif-display" src="https://media.giphy.com/media/W63Z9e3V4X5x8Y68Oq/giphy.gif" alt="Waiting...">
+            
+            <h1 id="text-display">Aku mau ngomong sesuatu... <p>aku tahu aku jarang bicara pada mu bahkan mungkin kita hampir tidak pernah bicara sama sekali, tapi entah kenapa akhir-akhir ini aku tidak bisa berhenti memikirkan mu.
+              
+            <br>  kamu mau gak jadi pacar aku?</h1>
+            
+            
+            <div class="btn-group" id="btn-group">
+                <button id="btn-yes" onclick="accepted()">Mau!</button>
+                <button id="btn-no" onmouseover="moveButton()">Gak mau</button>
+            </div>
+        </div>
+    </div>
+</body>
+ <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<script src="script.js"></script>
+</html>
